@@ -1,0 +1,6 @@
+framework module Pods_iOS6_HW25_Alexander_Strelkov {
+  umbrella header "Pods-iOS6-HW25-Alexander.Strelkov-umbrella.h"
+
+  export *
+  module * { export * }
+}

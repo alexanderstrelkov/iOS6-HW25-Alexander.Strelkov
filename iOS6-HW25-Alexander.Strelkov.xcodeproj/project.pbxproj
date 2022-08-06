@@ -13,6 +13,7 @@
 		11980F85289E662300B1EB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11980F83289E662300B1EB9D /* Main.storyboard */; };
 		11980F87289E662600B1EB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11980F86289E662600B1EB9D /* Assets.xcassets */; };
 		11980F8A289E662600B1EB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11980F88289E662600B1EB9D /* LaunchScreen.storyboard */; };
+		DC23E3AF0198BD902F26CBF7 /* Pods_iOS6_HW25_Alexander_Strelkov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D6952DE91766613315FA28 /* Pods_iOS6_HW25_Alexander_Strelkov.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		11980F86289E662600B1EB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11980F89289E662600B1EB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11980F8B289E662600B1EB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2932E78C33D8643E8CA226FC /* Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig"; path = "Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig"; sourceTree = "<group>"; };
+		96D6952DE91766613315FA28 /* Pods_iOS6_HW25_Alexander_Strelkov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS6_HW25_Alexander_Strelkov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A6E5323A17480768CFE686 /* Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig"; path = "Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC23E3AF0198BD902F26CBF7 /* Pods_iOS6_HW25_Alexander_Strelkov.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				11980F7C289E662300B1EB9D /* iOS6-HW25-Alexander.Strelkov */,
 				11980F7B289E662300B1EB9D /* Products */,
+				FE860385A5D65415D561F1D8 /* Pods */,
+				D8C5E921322042772E1CD712 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "iOS6-HW25-Alexander.Strelkov";
 			sourceTree = "<group>";
 		};
+		D8C5E921322042772E1CD712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96D6952DE91766613315FA28 /* Pods_iOS6_HW25_Alexander_Strelkov.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE860385A5D65415D561F1D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1A6E5323A17480768CFE686 /* Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig */,
+				2932E78C33D8643E8CA226FC /* Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11980F8E289E662600B1EB9D /* Build configuration list for PBXNativeTarget "iOS6-HW25-Alexander.Strelkov" */;
 			buildPhases = (
+				1284FA4BCAC6D0FBC1DD0F1D /* [CP] Check Pods Manifest.lock */,
 				11980F76289E662300B1EB9D /* Sources */,
 				11980F77289E662300B1EB9D /* Frameworks */,
 				11980F78289E662300B1EB9D /* Resources */,
+				4E35370FF09641382CA78DDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1284FA4BCAC6D0FBC1DD0F1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS6-HW25-Alexander.Strelkov-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E35370FF09641382CA78DDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11980F76289E662300B1EB9D /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		11980F8F289E662600B1EB9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A6E5323A17480768CFE686 /* Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		11980F90289E662600B1EB9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2932E78C33D8643E8CA226FC /* Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
