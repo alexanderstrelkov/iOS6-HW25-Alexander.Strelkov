@@ -13,6 +13,7 @@
 		11980F85289E662300B1EB9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11980F83289E662300B1EB9D /* Main.storyboard */; };
 		11980F87289E662600B1EB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11980F86289E662600B1EB9D /* Assets.xcassets */; };
 		11980F8A289E662600B1EB9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11980F88289E662600B1EB9D /* LaunchScreen.storyboard */; };
+		11980F94289E67F800B1EB9D /* MagicCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11980F93289E67F800B1EB9D /* MagicCards.swift */; };
 		DC23E3AF0198BD902F26CBF7 /* Pods_iOS6_HW25_Alexander_Strelkov.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D6952DE91766613315FA28 /* Pods_iOS6_HW25_Alexander_Strelkov.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		11980F86289E662600B1EB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11980F89289E662600B1EB9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11980F8B289E662600B1EB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11980F93289E67F800B1EB9D /* MagicCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCards.swift; sourceTree = "<group>"; };
 		2932E78C33D8643E8CA226FC /* Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig"; path = "Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig"; sourceTree = "<group>"; };
 		96D6952DE91766613315FA28 /* Pods_iOS6_HW25_Alexander_Strelkov.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS6_HW25_Alexander_Strelkov.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A6E5323A17480768CFE686 /* Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig"; path = "Target Support Files/Pods-iOS6-HW25-Alexander.Strelkov/Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,15 +65,32 @@
 		11980F7C289E662300B1EB9D /* iOS6-HW25-Alexander.Strelkov */ = {
 			isa = PBXGroup;
 			children = (
+				11980F92289E679700B1EB9D /* Sources */,
+				11980F91289E679100B1EB9D /* Resources */,
+			);
+			path = "iOS6-HW25-Alexander.Strelkov";
+			sourceTree = "<group>";
+		};
+		11980F91289E679100B1EB9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11980F83289E662300B1EB9D /* Main.storyboard */,
+				11980F88289E662600B1EB9D /* LaunchScreen.storyboard */,
+				11980F86289E662600B1EB9D /* Assets.xcassets */,
+				11980F8B289E662600B1EB9D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11980F92289E679700B1EB9D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				11980F7D289E662300B1EB9D /* AppDelegate.swift */,
 				11980F7F289E662300B1EB9D /* SceneDelegate.swift */,
 				11980F81289E662300B1EB9D /* ViewController.swift */,
-				11980F83289E662300B1EB9D /* Main.storyboard */,
-				11980F86289E662600B1EB9D /* Assets.xcassets */,
-				11980F88289E662600B1EB9D /* LaunchScreen.storyboard */,
-				11980F8B289E662600B1EB9D /* Info.plist */,
+				11980F93289E67F800B1EB9D /* MagicCards.swift */,
 			);
-			path = "iOS6-HW25-Alexander.Strelkov";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		D8C5E921322042772E1CD712 /* Frameworks */ = {
@@ -88,7 +107,6 @@
 				F1A6E5323A17480768CFE686 /* Pods-iOS6-HW25-Alexander.Strelkov.debug.xcconfig */,
 				2932E78C33D8643E8CA226FC /* Pods-iOS6-HW25-Alexander.Strelkov.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11980F82289E662300B1EB9D /* ViewController.swift in Sources */,
+				11980F94289E67F800B1EB9D /* MagicCards.swift in Sources */,
 				11980F7E289E662300B1EB9D /* AppDelegate.swift in Sources */,
 				11980F80289E662300B1EB9D /* SceneDelegate.swift in Sources */,
 			);
@@ -361,7 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QWP4K38XSA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS6-HW25-Alexander.Strelkov/Info.plist";
+				INFOPLIST_FILE = "iOS6-HW25-Alexander.Strelkov/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QWP4K38XSA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS6-HW25-Alexander.Strelkov/Info.plist";
+				INFOPLIST_FILE = "iOS6-HW25-Alexander.Strelkov/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
