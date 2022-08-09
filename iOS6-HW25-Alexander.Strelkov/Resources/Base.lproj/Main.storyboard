@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Magic Cards!-->
+        <!--Magic Cards-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS6_HW25_Alexander_Strelkov" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Magic Cards!" largeTitleDisplayMode="always" id="OgC-Ai-m3d"/>
+                    <navigationItem key="navigationItem" title="Magic Cards" largeTitleDisplayMode="always" id="OgC-Ai-m3d"/>
                     <connections>
                         <outlet property="tableView" destination="KdA-A7-GUY" id="dPy-NQ-Ry2"/>
                     </connections>
@@ -53,7 +53,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29Z-Ft-cKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="84.375"/>
+            <point key="canvasLocation" x="1781" y="84"/>
         </scene>
     </scenes>
     <resources>

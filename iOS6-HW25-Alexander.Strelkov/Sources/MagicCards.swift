@@ -8,21 +8,13 @@
 import Foundation
 
 struct MagicCards: Decodable {
-  var cards: [Cards]
+    let cards: [Cards]
 }
 
 struct Cards: Decodable {
-  let name: String
-  let type: String
-  let rarity: String
-  let setName: String
-  let image: String
-   
-  enum CodingKeys: String, CodingKey {
-    case name
-    case type
-    case rarity
-    case setName
-    case image = "imageUrl"
-  }
+    let name: String
+    let type: String?
+    let rarity: String?
+    let setName: String
+    let imageUrl: String?
 }

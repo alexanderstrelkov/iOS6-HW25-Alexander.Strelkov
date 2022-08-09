@@ -28,7 +28,7 @@
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rarity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkw-ew-rhv">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="setName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkw-ew-rhv">
                         <rect key="frame" x="16" y="65" width="345" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -50,7 +50,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="name" destination="51T-Vc-Zzn" id="InH-Zw-j34"/>
-                <outlet property="rarity" destination="Gkw-ew-rhv" id="SUE-Bx-TCX"/>
+                <outlet property="setName" destination="Gkw-ew-rhv" id="aes-MD-w3s"/>
                 <outlet property="type" destination="u7n-y6-LRs" id="CLp-xi-hhz"/>
             </connections>
             <point key="canvasLocation" x="167.39130434782609" y="123.21428571428571"/>
