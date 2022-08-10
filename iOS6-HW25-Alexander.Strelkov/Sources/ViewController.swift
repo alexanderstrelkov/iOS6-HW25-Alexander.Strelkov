@@ -14,11 +14,12 @@ class ViewController: UIViewController {
     
     var magicCards: [Cards] = []
     let networkManager = NetworkManager()
+    let urlCreating = URLCreating()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        fetchCards(from: "https://api.magicthegathering.io/v1/cards?name=Black%20Lotus")
+        fetchCards(from: urlCreating.getUrl())
     }
     
     //MARK: TableView Settings
@@ -46,9 +47,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showModal", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ModalViewController {
+            destination.magicCards = magicCards[tableView.indexPathForSelectedRow?.row ?? 0]
+        }
+    }
+    
     private func fetchCards(from url: String) {
         networkManager.fetchCards(from: url) { (result) in
             switch result {
@@ -64,4 +72,3 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
 }
-
