@@ -14,12 +14,11 @@ class ViewController: UIViewController {
     
     var magicCards: [Cards] = []
     let networkManager = NetworkManager()
-    let urlCreating = URLCreating()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        fetchCards(from: urlCreating.getUrl())
+        fetchCards(from: networkManager.getUrl())
     }
     
     //MARK: TableView Settings
